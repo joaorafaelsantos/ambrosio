@@ -57,3 +57,6 @@ buck-out/
 
 # CocoaPods
 /app/ios/Pods/
+
+# Others
+firebase_sdk_credentials.json
