@@ -1,9 +1,12 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useRef} from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 
+import NotificationService from './NotificationService';
 import messaging from '@react-native-firebase/messaging';
 
 function App() {
+  const notification = useRef(new NotificationService());
+
   useEffect(() => {
     messaging().subscribeToTopic('users');
   }, []);
