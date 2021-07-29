@@ -60,3 +60,4 @@ buck-out/
 
 # Others
 firebase_sdk_credentials.json
+google-services.json
